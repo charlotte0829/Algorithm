@@ -31,5 +31,6 @@ const int mod=1000000000+7;
 #define PII pair<int, int>
 #define mk(x,y) make_pair((x),(y))
 int main(){
+	printf("hello world!\n");
 	return 0;
 }

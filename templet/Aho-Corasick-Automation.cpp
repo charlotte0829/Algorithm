@@ -81,6 +81,3 @@ struct AC{
 		}
 	}
 }ac;
-int main(){
-	return 0;
-}

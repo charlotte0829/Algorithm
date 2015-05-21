@@ -43,8 +43,8 @@ struct Trie{
 		newnode(root);
 	}
 	void newnode(node *&x){
-		x=&nod[++sz]; 
-		x->idx=sz; x->num=x->tag=0;
+		x=&nod[sz]; 
+		x->idx=sz++; x->num=x->tag=0;
 		for(int i=0;i<sigma_size;i++)
 			x->ch[i]=null;
 	}

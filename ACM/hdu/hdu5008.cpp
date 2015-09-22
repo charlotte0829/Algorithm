@@ -4,7 +4,7 @@
   create time:  2015年09月22日 星期二 15时26分22秒
 **********************************************************
 solution:
-	suffix_array+binary+rmq
+	suffix_array+binary+RMQ
 	step1:
 		任何一个字符串的子串一定是其某个后缀的前缀,利用后缀数组可先求得sa;设字符串长度为len,
 	那么sa[i]为首的后缀会新产生len-sa[i]-height[i]个新串,且按字典序排序;用数组sum[i]记录

@@ -4,7 +4,7 @@
   create time:  2015年09月22日 星期二 15时26分22秒
 **********************************************************
 solution:
-	suffix_array+binary+RMQ
+	suffix_array+binary+rmq
 	step1:
 		任何一个字符串的子串一定是其某个后缀的前缀,利用后缀数组可先求得sa;设字符串长度为len,
 	那么sa[i]为首的后缀会新产生len-sa[i]-height[i]个新串,且按字典序排序;用数组sum[i]记录
@@ -12,7 +12,6 @@ solution:
 	step2:
 		二分第k小子串以哪个sa[i]为首,继而得到子串的长度;为找到最小的起始位置,考虑到后续sa[i]依旧可以形成
 	该子串,二分最终确定可以形成该子串的sa区间,区间最小的值即可,我们通过RMQ预处理好即可
-
 **********************************************************/
 #include<iostream>
 #include<cstdio>
@@ -24,7 +23,6 @@ solution:
 #include<stack>
 #include<cmath>
 #include<string>
-#include<biset>
 #include<algorithm>
 using namespace std;
 typedef long long ll;
